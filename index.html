@@ -64,12 +64,33 @@
                 Welcome to my Portfolio Website!
             </h3>
             <div class="home-top-intro-line"></div>
-            <img class="home-top-intro-arrow" src="img/arrow.svg">
+            <img class="home-top-intro-arrow" src="img/arrow.svg" onclick="scrollToProjects()">
           </div>
 
         </div>
+
+        <!-- making the arrow scroll down on click START-->
+          <script>  
+            function scrollToProjects() {
+              var projectsContainer = document.getElementById("projects");
+          
+              if (projectsContainer) {
+                
+                var offset = -120;  // to scroll a few pixels above the container
+          
+                var offsetTop = projectsContainer.offsetTop + offset;
+          
+                window.scrollTo({
+                  top: offsetTop,
+                  behavior: "smooth"
+                });
+              }
+            }
+          </script>
+        <!-- making the arrow scroll down on click END-->
+        
     
-        <div class="home-projects-container">
+        <div id="projects" class="home-projects-container">
 
           <h1>Some of my Projects</h1>
 
@@ -78,17 +99,17 @@
             <div class="home-projects-section-project1">
 
               <div class="home-projects-section-project1-img">
-                <img src="img/projects/lunar-lander.jpg">
+                <a href="projects-folder/lunar-lander.html">
+                  <img src="img/projects/lunar-lander.jpg" alt="Project Image" class="home-project-img"/>
+                  <span class="home-project-text">View Project</span>
+                </a>
               </div>
 
               <div class="home-projects-section-project1-desc">
                 <h2>Game Projects</h2>
                 <h3>Lunar Lander</h3>
                 <div class="home-projects-section-project1-desc-text">
-                  <p> The Lunar Lander is one of my JavaScript game programming projects, where the player needs to reach and land on a surface with a given amount of velocity, avoiding the obstacles coming in the way. 
-                  <br>
-                  <br>
-                  In this game, all the graphics as well were made through programming, with p5.js. 
+                  <p> The Lunar Lander is one of my JavaScript game programming projects, where all the graphics as well were made through programming, with p5.js. 
                   </p>
                 </div>
                 <div class="home-projects-section-project1-desc-button">
@@ -101,6 +122,8 @@
             </div>
 
             <div class="home-projects-section-project2">
+
+              
 
               <div class="home-projects-section-project2-img-after">
                 <img src="img/projects/branding-doveko.jpg">
@@ -132,14 +155,16 @@
             <div class="home-projects-section-project3">
 
               <div class="home-projects-section-project3-img">
-                <img src="img/projects/magazine.jpg">
+                <a href="projects-folder/magazine.html">
+                  <img src="img/projects/magazine.jpg" alt="Project Image" class="home-project-img"/>
+                  <span class="home-project-text">View Project</span>
+                </a>
               </div>
-
               <div class="home-projects-section-project3-desc">
                 <h2>Print Projects</h2>
                 <h3>Tokyo Magazine</h3>
                 <div class="home-projects-section-project3-desc-text">
-                  <p>This project was designing a magazine in a team.  <br> It was a great opportunity to try how to work <br> with print. </p>
+                  <p>This project was designing a magazine in a team. It was a great opportunity to try how to work with print. </p>
                 </div>
                 <div class="home-projects-section-project3-desc-button">
                   <a href="projects-folder/magazine.html"><button>
@@ -151,13 +176,11 @@
             </div>
 
           
-
-
           </div>
 
           
           <div class="projects-more">
-            <a href="projects-all.html"><button>View more Projects</button></a>
+            <a href="projects-all.html"><button>See All Projects</button></a>
           </div>
 
         </div>
@@ -178,6 +201,7 @@
     </div>
     
   </div> 
+
 
 
 
