@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+    
+    <nav id="menu">
+        <div class="logo">
+          <a href="#" id="hamburger-menu" onclick="toggleMenu()">
+            <img src="../img/menu.svg" alt="Menu" class="menu-icon"/>
+          </a>
+        </div>
+      
+        <div class="allmenu">
+          <ul>
+            <li><a href="../index.html"><img src="../img/logo-color.png" id="logo" /></a></li>
+            <div class="navbar-links">
+              <li><a href="../about-me.html"> About me </a></li>
+              <li><a href="../projects-all.html"> Projects </a></li>
+              <li><a href="../contacts.html"> Contacts </a></li>
+            </div>
+          </ul>
+        </div>
+    
+        <script>
+            function toggleMenu() {
+            var menu = document.querySelector("#menu ul");
+            menu.classList.toggle("active");
+             }
+        </script>
+    
+    </nav>
+
+    <div class="more-projects"> 
+       <a href="../projects-all.html"> <p><- See more Projects </p> </a> 
+    </div>
+
+    <main id="project-desc-main">
+        
+        <h1>Travel Agency Website</h1>
+
+        <div class="travel-website-container">
+            <div class="programming-language">
+                <img src="../img/html.svg"/>
+                <img src="../img/css.svg"/>
+                <img src="../img/js.svg"/>
+                <img src="../img/figma.svg"/>
+            </div>
+            <br/>
+            <br/>
+            <p>
+                It was the second website I created in my life. It was a group project where we had to create a website for a travel agency using html, css and 3 javascript attributes. 
+            </p>
+            <br/>
+            <div>
+                <img class="project-desc-img" src="../img/projects/travel-website.jpg"/>
+            </div>
+            
+            <p>
+                First we created an interactive prototype in Figma.
+            </p>
+           
+            <p>
+                We also created a design rational document, where we explained our design choices.
+            </p>
+
+        </div>
+
+    </main>
+
+
+</body>
+</html>

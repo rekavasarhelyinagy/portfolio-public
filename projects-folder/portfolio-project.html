@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+    
+    <nav id="menu">
+        <div class="logo">
+          <a href="#" id="hamburger-menu" onclick="toggleMenu()">
+            <img src="../img/menu.svg" alt="Menu" class="menu-icon"/>
+          </a>
+        </div>
+      
+        <div class="allmenu">
+          <ul>
+            <li><a href="../index.html"><img src="../img/logo-color.png" id="logo" /></a></li>
+            <div class="navbar-links">
+              <li><a href="../about-me.html"> About me </a></li>
+              <li><a href="../projects-all.html"> Projects </a></li>
+              <li><a href="../contacts.html"> Contacts </a></li>
+            </div>
+          </ul>
+        </div>
+    
+        <script>
+            function toggleMenu() {
+            var menu = document.querySelector("#menu ul");
+            menu.classList.toggle("active");
+             }
+        </script>
+    
+    </nav>
+
+    <div class="more-projects"> 
+       <a href="../projects-all.html"> <p><- See more Projects </p> </a> 
+    </div>
+
+    <main id="project-desc-main">
+        
+        <h1>Portfolio Project</h1>
+
+        <div class="portfolio-project-container">
+
+            <div class="programming-language">
+                <img src="../img/js.png"/>
+                <img src="../img/node.svg"/>
+            </div>
+            <br/>
+            <br/>
+            <p>
+                very complex
+            </p>
+            <br/>
+            <div>
+                <img class="project-desc-img" src="../img/projects/portfolio-project.jpg"/>
+            </div>
+            
+        </div>
+
+    </main>
+
+    <div id="footer-container">
+
+      <div class="footer-contacts-container">
+        <div class="footer-contacts-email">
+          <a href="../contacts.html">
+            <img src="../img/email-footer.svg" alt="email-icon">
+          </a>
+        </div>
+        <div class="footer-contacts-linkedin">
+          <a href="https://www.linkedin.com/in/réka-vásárhelyi-nagy-489521298/">
+            <img src="../img/linkedin-footer.svg" alt="linkedin-icon">
+          </a>
+        </div>
+      </div>
+  
+      <div class="footer-name">
+        <p>
+          © 2023  Réka Vásárhelyi-Nagy
+        <p>
+      </div>
+  
+    </div> 
+
+</body>
+</html>

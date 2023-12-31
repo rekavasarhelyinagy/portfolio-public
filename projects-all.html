@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    
+  <nav id="menu">
+    <div class="logo">
+      <a href="#" id="hamburger-menu" onclick="toggleMenu()">
+        <img src="img/menu.svg" alt="Menu" />
+      </a>
+    </div>
+  
+    <div class="allmenu">
+      <ul>
+        <li><a href="index.html"><img src="img/logo-color.png" id="logo" /></a></li>
+        <div class="navbar-links">
+          <li><a href="about-me.html"> About me </a></li>
+          <li><a href="projects-all.html"> Projects </a></li>
+          <li><a href="contacts.html"> Contacts </a></li>
+        </div>
+      </ul>
+    </div>
+
+    <script>
+        function toggleMenu() { var menu = document.querySelector("#menu ul");
+        menu.classList.toggle("active"); }
+    </script>
+
+  </nav>
+
+  <main>
+
+    <h1>Projects</h1>
+    <!-- <div class="allprojects-buttons-container">
+            <a class="allprojects-buttons" href="projects-coding.html"> Coding/ Webdesign Projects </a>
+            <a class="allprojects-buttons" href="projects-design.html"> Design Projects </a>
+    </div> -->
+
+    <div class="projects-filters">
+      <ul>
+        <li><a href="projects-all.html" class="projects-filters-active">All</a></li>
+        <li><a href="projects-coding.html">Programming</a></li>
+        <li><a href="projects-design.html">Graphic Design</a></li>
+      </ul>
+    </div>
+
+    <div class="projects-container">
+      <a href="projects-folder/lunar-lander.html"><img src="img/projects/lunar-lander.jpg"/></a>
+      <a href="projects-folder/bstjkp.html"><img src="img/projects/bstjkp.jpg"/></a>
+      <a href="projects-folder/branding-personal.html"><img src="img/projects/branding-personal1.jpg"/></a>
+      <a href="projects-folder/branding-bookstore.html"><img src="img/projects/branding-bookstore.jpg"/></a>
+      <a href="projects-folder/branding-essence.html"><img src="img/projects/branding-essence.jpg"/></a>
+      <!-- <a href="projects-folder/portfolio-project.html"><img src="img/projects/portfolio-project.jpg"/></a> -->
+      <a href="projects-folder/magazine.html"><img src="img/projects/magazine.jpg"/></a>
+      <a href="projects-folder/branding-doveko.html"><img src="img/projects/branding-doveko.jpg"/></a>
+      <!-- <a href="projects-folder/travel-website.html"><img src="img/projects/travel-website.jpg"/></a> -->
+      <a href="projects-folder/todo-list.html"><img src="img/projects/todo-list.jpg"/></a>
+      <!-- <a href="projects-folder/cartoon.html"><img src="img/projects/cartoon.jpg"/></a> -->
+      <a href="projects-folder/skeumorphism.html"><img src="img/projects/skeumorphism.jpg"/></a>
+      <a href="projects-folder/stylization.html"><img src="img/projects/stylization.jpg"/></a>
+      <!-- <a href="projects-folder/lunar-lander.html"><img src="img/projects/travel-app.jpg"/></a> -->
+      <!-- <a href="projects-folder/cartoon.html"><img src="img/projects/hci.jpg"/></a> -->
+      <!-- <a href="projects-folder/ui-temporary.html"><img src="img/projects/ui-temporary.jpg"/></a> -->
+
+    </div>
+
+
+  </main>
+
+  <div id="footer-container">
+
+    <div class="footer-contacts-container">
+      <div class="footer-contacts-email">
+        <a href="contacts.html">
+          <img src="img/email-footer.svg" alt="email-icon">
+        </a>
+      </div>
+      <div class="footer-contacts-linkedin">
+        <a href="https://www.linkedin.com/in/réka-vásárhelyi-nagy-489521298/">
+          <img src="img/linkedin-footer.svg" alt="linkedin-icon">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-name">
+      <p>
+        © 2023  Réka Vásárhelyi-Nagy
+      <p>
+    </div>
+
+  </div> 
+
+</body>
+</html>

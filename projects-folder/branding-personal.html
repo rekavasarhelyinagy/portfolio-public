@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+    
+    <nav id="menu">
+        <div class="logo">
+          <a href="#" id="hamburger-menu" onclick="toggleMenu()">
+            <img src="../img/menu.svg" alt="Menu" class="menu-icon"/>
+          </a>
+        </div>
+      
+        <div class="allmenu">
+          <ul>
+            <li><a href="../index.html"><img src="../img/logo-color.png" id="logo" /></a></li>
+            <div class="navbar-links">
+              <li><a href="../about-me.html"> About me </a></li>
+              <li><a href="../projects-all.html"> Projects </a></li>
+              <li><a href="../contacts.html"> Contacts </a></li>
+            </div>
+          </ul>
+        </div>
+    
+        <script>
+            function toggleMenu() {
+            var menu = document.querySelector("#menu ul");
+            menu.classList.toggle("active");
+             }
+        </script>
+    
+    </nav>
+
+    <div class="more-projects"> 
+      <a href="../projects-all.html"> <button>← See more Projects </button> </a> 
+   </div>
+
+    <main id="project-descriptions-main">
+
+      <div class="project-title">
+        <h1>Personal Branding</h1>
+      </div>
+        
+      <div class="programming-language">
+        <img src="../img/ai.svg"/>
+        <img src="../img/ae.svg"/>
+      </div>
+
+      <div class="branding-personal-content">
+
+            
+            <p>
+              In this project I created my personal logo, which I plan to mark my products with in the future.<br/>
+              It comes from the first letters of my name, connected together in a minimalistic way.<br/>
+              <!-- ((---- explain colour choice here ----)) <br/> -->
+              The primary logo is a coloured version with a symbol of a horse in the letter R 
+              <!-- ((---- explain it more ----)).  -->
+              It also includes my full name on the bottom. The more minimalistic version comes without the full name and the horse symbol. 
+            </p>
+            <div class="branding-personal-img-container">
+                <img class="branding-personal-img" src="../img/projects/branding-personal2.jpg"/>
+            </div>
+            <p>
+              The black coloured version of the logo is seen below. The one on the right is the most simple, black version without any additiona symbol or name. I apply it on the smallest surfaces like the landing page icon on this website.
+            </p>
+            <div class="branding-personal-img-container">
+              <img class="branding-personal-img" src="../img/projects/branding-personal3.jpg"/>
+            </div>
+            <p>
+              The video below shows the animated version of the logo.
+            </p>
+            <div class="branding-personal-img-container">
+              <video controls>
+                <source src="../img/projects/logo-animation-b.mp4" type="video/mp4">
+              </video>
+            </div>
+            
+      </div>
+
+      <div class="projects-more">
+        <a href="../projects-all.html"><button>View more Projects</button></a>
+      </div>
+
+    </main>
+
+    <div id="footer-container">
+
+      <div class="footer-contacts-container">
+        <div class="footer-contacts-email">
+          <a href="../contacts.html">
+            <img src="../img/email-footer.svg" alt="email-icon">
+          </a>
+        </div>
+        <div class="footer-contacts-linkedin">
+          <a href="https://www.linkedin.com/in/réka-vásárhelyi-nagy-489521298/">
+            <img src="../img/linkedin-footer.svg" alt="linkedin-icon">
+          </a>
+        </div>
+      </div>
+  
+      <div class="footer-name">
+        <p>
+          © 2023  Réka Vásárhelyi-Nagy
+        <p>
+      </div>
+  
+    </div> 
+
+
+</body>
+</html>

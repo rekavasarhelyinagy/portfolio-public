@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+    
+    <nav id="menu">
+        <div class="logo">
+          <a href="#" id="hamburger-menu" onclick="toggleMenu()">
+            <img src="../img/menu.svg" alt="Menu" class="menu-icon"/>
+          </a>
+        </div>
+      
+        <div class="allmenu">
+          <ul>
+            <li><a href="../index.html"><img src="../img/logo-color.png" id="logo" /></a></li>
+            <div class="navbar-links">
+              <li><a href="../about-me.html"> About me </a></li>
+              <li><a href="../projects-all.html"> Projects </a></li>
+              <li><a href="../contacts.html"> Contacts </a></li>
+            </div>
+          </ul>
+        </div>
+    
+        <script>
+            function toggleMenu() {
+            var menu = document.querySelector("#menu ul");
+            menu.classList.toggle("active");
+             }
+        </script>
+    
+    </nav>
+
+    <div class="more-projects"> 
+      <a href="../projects-all.html"> <button>← See more Projects </button> </a> 
+   </div>
+
+    <main id="project-descriptions-main">
+        
+      <div class="project-title">
+        <h1>Magazine Project</h1>
+      </div>
+
+      <div class="programming-language">
+        <img src="../img/id.svg"/>
+      </div>
+
+      <div class="magazine-content">
+
+            <p>
+                This group project was a great opportunity to try out working with print. It was a different kind of experience, than any other digital design, since we had to pay attention of for example how the colours will look different after printing or what the texture of the paper should be. But I believe, it is also useful to have experience in this field of graphic design to widen your skillsets. 
+            </p>
+
+            <div class="magazine-part1">
+              <h2>Front and Back Cover</h2>
+              <div>
+                <img class="magazine-img-cover" src="../img/projects/magazine1.jpg"/>
+              </div>
+            </div>
+
+            <div class="magazine-part1">
+            <h2>Chapters</h2>
+            <p>Each chaper has its own colour theme, which is reflected on the chapter-introduction pages, the main colour of the pictures and title colours.</p>
+            </div>
+            <br>
+            <br>
+            <div class="magazine-part2">
+              <img class="magazine-img-chapters" src="../img/projects/magazine2.jpg"/>
+              <img class="magazine-img-chapters" src="../img/projects/magazine3.jpg"/>
+            </div>
+
+
+            <div class="magazine-part1">
+              <h2>Infographics</h2>
+              <p>As an introduction, the magazine starts with basic facts of Tokyo, represented via infographics.</p>
+              <div>
+                <img class="magazine-img-info" src="../img/projects/magazine10.jpg"/>
+              </div>
+            </div>
+            <div class="magazine-part1">
+              <h2>Some pages from the "Culture" Chapter</h2>
+            </div>
+            <div class="magazine-img-pages">
+              <img src="../img/projects/magazine4.jpg"/>
+              <img src="../img/projects/magazine5.jpg"/>
+              <img src="../img/projects/magazine6.jpg"/>
+              <img src="../img/projects/magazine7.jpg"/>
+              <img src="../img/projects/magazine8.jpg"/>
+              <img src="../img/projects/magazine9.jpg"/>
+            </div>
+            
+      </div>
+
+      <div class="projects-more">
+        <a href="../projects-all.html"><button>View more Projects</button></a>
+      </div>
+
+    </main>
+
+    <div id="footer-container">
+
+      <div class="footer-contacts-container">
+        <div class="footer-contacts-email">
+          <a href="../contacts.html">
+            <img src="../img/email-footer.svg" alt="email-icon">
+          </a>
+        </div>
+        <div class="footer-contacts-linkedin">
+          <a href="https://www.linkedin.com/in/réka-vásárhelyi-nagy-489521298/">
+            <img src="../img/linkedin-footer.svg" alt="linkedin-icon">
+          </a>
+        </div>
+      </div>
+  
+      <div class="footer-name">
+        <p>
+          © 2023  Réka Vásárhelyi-Nagy
+        <p>
+      </div>
+  
+    </div> 
+
+</body>
+</html>

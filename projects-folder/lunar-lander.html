@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+    
+    <nav id="menu">
+        <div class="logo">
+          <a href="#" id="hamburger-menu" onclick="toggleMenu()">
+            <img src="../img/menu.svg" alt="Menu" class="menu-icon"/>
+          </a>
+        </div>
+      
+        <div class="allmenu">
+          <ul>
+            <li><a href="../index.html"><img src="../img/logo-color.png" id="logo" /></a></li>
+            <div class="navbar-links">
+              <li><a href="../about-me.html"> About me </a></li>
+              <li><a href="../projects-all.html"> Projects </a></li>
+              <li><a href="../contacts.html"> Contacts </a></li>
+            </div>
+          </ul>
+        </div>
+    
+        <script>
+            function toggleMenu() {
+            var menu = document.querySelector("#menu ul");
+            menu.classList.toggle("active");
+             }
+        </script>
+    
+    </nav>
+
+    <div class="more-projects"> 
+        <a href="../projects-all.html"> <button>← See more Projects </button> </a> 
+     </div>
+
+    <main id="project-descriptions-main">
+        
+        <div class="project-title">
+            <h1>Game Project - Lunar Lander</h1>
+        </div>
+
+        <div class="programming-language">
+            <img src="../img/js.svg"/>
+            <img src="../img/p5js.svg"/>
+        </div>
+
+        <div class="lunar-lander-content">
+        
+            <p>
+                In this school project, the task was to code a game, where the mechanics was given. The player was supposed to slow the avatar down, so you don't hit the surface at too high velocity. I have chosen a sea theme and have put some obsticles like jellifish, coralls and moving sharks to make the game more challenging. Avoiding these obstacles, you need to reach the landing surface and land with less than the given velocity.
+            </p>
+            <br>
+            <br>
+
+            <div class="lunar-lander-part1">
+                <p>
+                    Click on the image to try out the game!
+                </p>
+                <div>
+                    <a href="https://ju-nmd2022.github.io/fop-lunar-lander-rekavasarhelyinagy/"><img class="lunar-lander-img1" src="../img/projects/lunar-lander.jpg"/></a>
+                </div>
+            </div>
+            <br>
+
+            <p>
+                We had to make a documentation about the design process. Here are some details from the planning:
+            </p>
+            <br>
+            <br>
+
+            <div class="lunar-lander-part1">
+                <p>
+                    A draft about the final version:
+                </p>
+                <div>
+                    <img class="lunar-lander-img1" src="../img/projects/lunar-lander1.jpg"/>
+                </div>
+                <p class="lunar-lander-part1-calculation-text">
+                    Since the graphical elements were not drawn by hand, but programmed with p5.js, I had to make some calculations for designing the characters consisting of simple shapes, and the positions of the objects.
+                </p>
+                <br>
+            </div>
+
+            <div class="lunar-lander-part2">
+                <div>
+                    <img class="lunar-lander-img2" src="../img/projects/lunar-lander2.jpg"/>
+                </div>
+                <div>
+                    <img class="lunar-lander-img3" src="../img/projects/lunar-lander3.jpg"/>
+                </div>
+            </div>
+
+            
+            <!-- <p>
+                I find it crucially important to make a user test during developing a project. To get a clearer picture, I asked users from different generations. It was really interesting to see how differently they approach the game. Based on the results, I made changes, which led to a clear improvement in the next user test.
+            </p>
+            <br/>
+            <br/>
+            <p>
+                *(video/pic here about the user test)*
+            </p> -->
+
+        </div>
+
+        <div class="projects-more">
+            <a href="../projects-all.html"><button>View more Projects</button></a>
+        </div>
+
+    </main>
+
+    <div id="footer-container">
+
+        <div class="footer-contacts-container">
+          <div class="footer-contacts-email">
+            <a href="../contacts.html">
+              <img src="../img/email-footer.svg" alt="email-icon">
+            </a>
+          </div>
+          <div class="footer-contacts-linkedin">
+            <a href="https://www.linkedin.com/in/réka-vásárhelyi-nagy-489521298/">
+              <img src="../img/linkedin-footer.svg" alt="linkedin-icon">
+            </a>
+          </div>
+        </div>
+    
+        <div class="footer-name">
+          <p>
+            © 2023  Réka Vásárhelyi-Nagy
+          <p>
+        </div>
+    
+      </div> 
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+  <nav id="menu">
+    <div class="logo">
+      <a href="#" id="hamburger-menu" onclick="toggleMenu()">
+        <img src="img/menu.svg" alt="Menu" class="menu-icon"/>
+      </a>
+    </div>
+  
+    <div class="allmenu">
+      <ul>
+        <li><a href="index.html"><img src="img/logo-color.png" id="logo" /></a></li>
+        <div class="navbar-links">
+          <li><a href="about-me.html"> About me </a></li>
+          <li><a href="projects-all.html"> Projects </a></li>
+          <li><a href="contacts.html"> Contacts </a></li>
+        </div>
+      </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+        var menu = document.querySelector("#menu ul");
+        menu.classList.toggle("active");
+        }
+    </script>
+
+  </nav>
+
+  <div id="home-container">
+      
+        <div class="home-top-container">
+
+          <div class="home-top-intro-after">
+            <h1 id="text1">Hi, I'm Réka,</h1>
+            <h2 id="text2">
+                Creative Developer
+            </h2>
+            <h3 id="text3">
+                Welcome to my Portfolio Website!
+            </h3>
+            <div class="home-top-intro-line"></div>
+            <img class="home-top-intro-arrow" src="img/arrow.svg">
+          </div>
+
+          <div class="home-top-mainpic">
+            <img src="img/background1-smaller.jpg">
+          </div>
+
+          <div class="home-top-intro">
+            <h1 id="text1">Hi, I'm Réka,</h1>
+            <h2 id="text2">
+                Creative Developer
+            </h2>
+            <h3 id="text3">
+                Welcome to my Portfolio Website!
+            </h3>
+            <div class="home-top-intro-line"></div>
+            <img class="home-top-intro-arrow" src="img/arrow.svg">
+          </div>
+
+        </div>
+    
+        <div class="home-projects-container">
+
+          <h1>Some of my Projects</h1>
+
+          <div class="home-projects-section">
+
+            <div class="home-projects-section-project1">
+
+              <div class="home-projects-section-project1-img">
+                <img src="img/projects/lunar-lander.jpg">
+              </div>
+
+              <div class="home-projects-section-project1-desc">
+                <h2>Game Projects</h2>
+                <h3>Lunar Lander</h3>
+                <div class="home-projects-section-project1-desc-text">
+                  <p> The Lunar Lander is one of my JavaScript game programming projects, where the player needs to reach and land on a surface with a given amount of velocity, avoiding the obstacles coming in the way. 
+                  <br>
+                  <br>
+                  In this game, all the graphics as well were made through programming, with p5.js. 
+                  </p>
+                </div>
+                <div class="home-projects-section-project1-desc-button">
+                  <a href="projects-folder/lunar-lander.html"><button>
+                    View Project
+                  </button></a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="home-projects-section-project2">
+
+              <div class="home-projects-section-project2-img-after">
+                <img src="img/projects/branding-doveko.jpg">
+              </div>
+
+              <div class="home-projects-section-project2-desc">
+                <h2>Branding Projects</h2>
+                <h3>Doveko Cosmetics</h3>
+                <div class="home-projects-section-project2-desc-text">
+                  <p>
+                     Doveko is an eco-friendly cosmetical company, one of my branding projects. 
+                     <br>
+                     It includes a design of logo, brand colours, typography, mockups, illustrations, moodboard and the background story of the theoretical business.
+                  </p>
+                </div>
+                <div class="home-projects-section-project2-desc-button">
+                  <a href="projects-folder/branding-doveko.html"><button>
+                    View Project
+                  </button></a>
+                </div>
+              </div>
+
+              <div class="home-projects-section-project2-img">
+                <img src="img/projects/branding-doveko.jpg">
+              </div>
+
+            </div>
+
+            <div class="home-projects-section-project3">
+
+              <div class="home-projects-section-project3-img">
+                <img src="img/projects/magazine.jpg">
+              </div>
+
+              <div class="home-projects-section-project3-desc">
+                <h2>Print Projects</h2>
+                <h3>Tokyo Magazine</h3>
+                <div class="home-projects-section-project3-desc-text">
+                  <p>This project was designing a magazine in a team.  <br> It was a great opportunity to try how to work <br> with print. </p>
+                </div>
+                <div class="home-projects-section-project3-desc-button">
+                  <a href="projects-folder/magazine.html"><button>
+                    View Project
+                  </button></a>
+                </div>
+              </div>
+
+            </div>
+
+          
+
+
+          </div>
+
+          
+          <div class="projects-more">
+            <a href="projects-all.html"><button>View more Projects</button></a>
+          </div>
+
+        </div>
+
+
+
+  </div>
+
+  <div id="footer-container">
+
+    <div class="footer-icons">
+      <img src="img/email-footer.svg">
+      <img src="img/linkedin-footer.svg">
+    </div>
+
+    <div class="footer-name">
+      <p> © 2023 Vásárhelyi-Nagy Réka</p>
+    </div>
+    
+  </div> 
+
+
+
+</body>
+</html>
