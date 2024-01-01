@@ -21,7 +21,7 @@
         <li><a href="index.html"><img src="img/logo-color.png" id="logo" /></a></li>
         <div class="navbar-links">
           <li><a href="about-me.html"> About me </a></li>
-          <li><a href="projects-all.html"> Projects </a></li>
+          <li><a class="navbar-links-active" href="projects-all.html"> Projects </a></li>
           <li><a href="contacts.html"> Contacts </a></li>
         </div>
       </ul>
@@ -44,29 +44,87 @@
 
     <div class="projects-filters">
       <ul>
-        <li><a href="projects-all.html" class="projects-filters-active">All</a></li>
+        <li><div class="projects-filters-active"><a href="projects-all.html" >All</a></div></li>
         <li><a href="projects-coding.html">Programming</a></li>
-        <li><a href="projects-design.html">Graphic Design</a></li>
+        <li><a href="projects-design.html">Graphic and UX/UI Design</a></li>
       </ul>
     </div>
 
     <div class="projects-container">
-      <a href="projects-folder/lunar-lander.html"><img src="img/projects/lunar-lander.jpg"/></a>
-      <a href="projects-folder/bstjkp.html"><img src="img/projects/bstjkp.jpg"/></a>
-      <a href="projects-folder/branding-personal.html"><img src="img/projects/branding-personal1.jpg"/></a>
-      <a href="projects-folder/branding-bookstore.html"><img src="img/projects/branding-bookstore.jpg"/></a>
-      <a href="projects-folder/branding-essence.html"><img src="img/projects/branding-essence.jpg"/></a>
+      <div class="project">
+        <a href="projects-folder/lunar-lander.html">
+          <img src="img/projects/lunar-lander.jpg" alt="Project Image" class="project-img"/>
+          <span class="project-text">Lunar Lander<br/><br/> (Game Project)</span>
+        </a>
+      </div>
+      
+      <div class="project">
+        <a href="projects-folder/bstjkp.html">
+          <img src="img/projects/bstjkp.jpg" alt="Project Image" class="project-img"/>
+          <span class="project-text">Bring Spring to Jönköping<br/><br/> (Game Project)</span>
+        </a>
+      </div>
+      <div class="project">
+        <a href="projects-folder/branding-personal.html">
+          <img src="img/projects/branding-personal1.jpg" alt="Project Image" class="project-img"/>
+          <span class="project-text">Personal Branding</span>
+        </a>
+      </div>
+      <div class="project">
+        <a href="projects-folder/branding-bookstore.html">
+          <img src="img/projects/branding-bookstore.jpg" alt="Project Image" class="project-img"/>
+          <span class="project-text">Bookstore Branding & Social Media Prototyping</span>
+        </a>
+      </div>
+      <div class="project">
+        <a href="projects-folder/branding-essence.html">
+          <img src="img/projects/branding-essence.jpg" alt="Project Image" class="project-img"/>
+          <span class="project-text">Perfume Branding</span>
+        </a>
+      </div>
       <!-- <a href="projects-folder/portfolio-project.html"><img src="img/projects/portfolio-project.jpg"/></a> -->
-      <a href="projects-folder/magazine.html"><img src="img/projects/magazine.jpg"/></a>
-      <a href="projects-folder/branding-doveko.html"><img src="img/projects/branding-doveko.jpg"/></a>
+      <div class="project">
+        <a href="projects-folder/magazine.html">
+          <img src="img/projects/magazine.jpg" alt="Project Image" class="project-img"/>
+          <span class="project-text">Printed Magazine</span>
+        </a>
+      </div>
+      <div class="project">
+        <a href="projects-folder/branding-doveko.html">
+          <img src="img/projects/branding-doveko.jpg" alt="Project Image" class="project-img"/>
+          <span class="project-text">Cosmetical Product Branding</span>
+        </a>
+      </div>
       <!-- <a href="projects-folder/travel-website.html"><img src="img/projects/travel-website.jpg"/></a> -->
-      <a href="projects-folder/todo-list.html"><img src="img/projects/todo-list.jpg"/></a>
+      <div class="project">
+        <a href="projects-folder/todo-list.html">
+          <img src="img/projects/todo-list.jpg" alt="Project Image" class="project-img"/>
+          <span class="project-text">To-do List <br/> (Programming)</span>
+        </a>
+      </div>
       <!-- <a href="projects-folder/cartoon.html"><img src="img/projects/cartoon.jpg"/></a> -->
-      <a href="projects-folder/skeumorphism.html"><img src="img/projects/skeumorphism.jpg"/></a>
-      <a href="projects-folder/stylization.html"><img src="img/projects/stylization.jpg"/></a>
+      <div class="project">
+        <a href="projects-folder/skeumorphism.html">
+          <img src="img/projects/skeumorphism.jpg" alt="Project Image" class="project-img"/>
+          <span class="project-text">Skeumorphism</span>
+        </a>
+      </div>
+      <div class="project">
+        <a href="projects-folder/stylization.html">
+          <img src="img/projects/stylization.jpg" alt="Project Image" class="project-img"/>
+          <span class="project-text">Stylization</span>
+        </a>
+      </div>
       <!-- <a href="projects-folder/lunar-lander.html"><img src="img/projects/travel-app.jpg"/></a> -->
       <!-- <a href="projects-folder/cartoon.html"><img src="img/projects/hci.jpg"/></a> -->
       <!-- <a href="projects-folder/ui-temporary.html"><img src="img/projects/ui-temporary.jpg"/></a> -->
+      <div class="project">
+        <a href="projects-folder/ux-ui-swerv.html">
+          <img src="img/projects/ux-ui-swerv.jpg" alt="Project Image" class="project-img"/>
+          <span class="project-text">UX/UI Design of a Public Transportation App</span>
+        </a>
+      </div>
+
 
     </div>
 
@@ -75,25 +133,15 @@
 
   <div id="footer-container">
 
-    <div class="footer-contacts-container">
-      <div class="footer-contacts-email">
-        <a href="contacts.html">
-          <img src="img/email-footer.svg" alt="email-icon">
-        </a>
-      </div>
-      <div class="footer-contacts-linkedin">
-        <a href="https://www.linkedin.com/in/réka-vásárhelyi-nagy-489521298/">
-          <img src="img/linkedin-footer.svg" alt="linkedin-icon">
-        </a>
-      </div>
+    <div class="footer-icons">
+      <img src="img/email-footer.svg">
+      <img src="img/linkedin-footer.svg">
     </div>
 
     <div class="footer-name">
-      <p>
-        © 2023  Réka Vásárhelyi-Nagy
-      <p>
+      <p> © 2023 Vásárhelyi-Nagy Réka</p>
     </div>
-
+    
   </div> 
 
 </body>
