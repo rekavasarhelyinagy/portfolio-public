@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
 
   <nav id="menu">
@@ -55,6 +56,7 @@
             <img src="img/background1-smaller.jpg">
           </div>
 
+
           <div class="home-top-intro">
             <h1 id="text1">Hi, I'm Réka,</h1>
             <h2 id="text2">
@@ -64,30 +66,47 @@
                 Welcome to my Portfolio Website!
             </h3>
             <div class="home-top-intro-line"></div>
+            <div class="home-top-intro-line-after"></div>
             <img class="home-top-intro-arrow" src="img/arrow.svg" onclick="scrollToProjects()">
           </div>
 
         </div>
 
-        <!-- making the arrow scroll down on click START-->
-          <script>  
-            function scrollToProjects() {
-              var projectsContainer = document.getElementById("projects");
-          
-              if (projectsContainer) {
-                
-                var offset = -120;  // to scroll a few pixels above the container
-          
-                var offsetTop = projectsContainer.offsetTop + offset;
-          
-                window.scrollTo({
-                  top: offsetTop,
-                  behavior: "smooth"
-                });
-              }
-            }
-          </script>
-        <!-- making the arrow scroll down on click END-->
+        <div class="home-top-container-after">
+
+          <div class="home-top-intro-after">
+            <h1 id="text1">Hi, I'm Réka,</h1>
+            <h2 id="text2">
+                Creative Developer
+            </h2>
+            <h3 id="text3">
+                Welcome to my Portfolio Website!
+            </h3>
+            <div class="home-top-intro-line"></div>
+            <!-- <img class="home-top-intro-arrow-after" src="img/arrow.svg"> -->
+          </div>
+
+          <div class="home-top-mainpic">
+            <img src="img/background1-smaller.jpg">
+          </div>
+
+
+          <div class="home-top-intro">
+            <h1 id="text1">Hi, I'm Réka,</h1>
+            <h2 id="text2">
+                Creative Developer
+            </h2>
+            <h3 id="text3">
+                Welcome to my Portfolio Website!
+            </h3>
+            <div class="home-top-intro-line"></div>
+            <div class="home-top-intro-line-after"></div>
+            <img class="home-top-intro-arrow-after" src="img/arrow.svg" onclick="scrollToProjects()">
+          </div>
+
+        </div>
+
+        
         
     
         <div id="projects" class="home-projects-container">
@@ -125,9 +144,7 @@
 
               
 
-              <div class="home-projects-section-project2-img-after">
-                <img src="img/projects/branding-doveko.jpg">
-              </div>
+              
 
               <div class="home-projects-section-project2-desc">
                 <h2>Branding Projects</h2>
@@ -186,8 +203,115 @@
         </div>
 
 
+  </div>
+
+  <div id="home-container-after">
+
+      <div class="home-top-mainpic-after">
+        <img src="img/background1-after.jpg">
+      </div>
+
+        <div class="home-projects-container-after">
+
+          <div>
+            <h1>Some of my Projects</h1>
+          </div>
+
+          <div class="home-projects-section-after">
+
+            <div class="home-projects-section-project1-after">
+
+              <h2>Game Projects</h2>
+              <div class="home-projects-section-project1-img-after">
+                <a href="projects-folder/lunar-lander.html">
+                  <img src="img/projects/lunar-lander.jpg" alt="Project Image" class="home-project-img-after"/>
+                  <!-- <span class="home-project-text-after">View Project</span> -->
+                </a>
+              </div>
+
+              <div class="home-projects-section-project1-desc-after">
+                
+                <h3>Lunar Lander</h3>
+                <div class="home-projects-section-project1-desc-text-after">
+                  <p> The Lunar Lander is one of my JavaScript game programming projects, where all the graphics as well were made through programming, with p5.js. 
+                  </p>
+                </div>
+                <div class="home-projects-section-project1-desc-button-after">
+                  <a href="projects-folder/lunar-lander.html"><button>
+                    View Project
+                  </button></a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="home-projects-section-project2-after">
+
+              <h2>Branding Projects</h2>
+
+              <div class="home-projects-section-project2-img-after">
+                <img src="img/projects/branding-doveko.jpg">
+              </div>
+
+              <div class="home-projects-section-project2-desc-after">
+                
+                <h3>Doveko Cosmetics</h3>
+                <div class="home-projects-section-project2-desc-text-after">
+                  <p>
+                     Doveko is an eco-friendly cosmetical company, one of my branding projects. 
+                     <br>
+                     It includes a design of logo, brand colours, typography, mockups, illustrations, moodboard and the background story of the theoretical business.
+                  </p>
+                </div>
+                <div class="home-projects-section-project2-desc-button-after">
+                  <a href="projects-folder/branding-doveko.html"><button>
+                    View Project
+                  </button></a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="home-projects-section-project3-after">
+
+              <h2>Print Projects</h2>
+
+              <div class="home-projects-section-project3-img-after">
+                <a href="projects-folder/magazine.html">
+                  <img src="img/projects/magazine.jpg" alt="Project Image" class="home-project-img-after"/>
+                  <!-- <span class="home-project-text-after">View Project</span> -->
+                </a>
+              </div>
+              <div class="home-projects-section-project3-desc-after">
+                
+                <h3>Tokyo Magazine</h3>
+                <div class="home-projects-section-project3-desc-text-after">
+                  <p>This project was designing a magazine in a team. It was a great opportunity to try how to work with print. </p>
+                </div>
+                <div class="home-projects-section-project3-desc-button-after">
+                  <a href="projects-folder/magazine.html"><button>
+                    View Project
+                  </button></a>
+                </div>
+              </div>
+
+            </div>
+          
+        </div>
+
+        <div class="projects-more-home">
+          <a href="projects-all.html"><button>See All Projects</button></a>
+        </div>
 
   </div>
+          
+          
+
+  
+
+
+
+  
 
   <div id="footer-container">
 
@@ -202,6 +326,31 @@
     
   </div> 
 
+
+  <!-- making the arrow scroll down on click START-->
+  <script>  
+    function scrollToProjects() {
+      var projectsContainer = document.getElementById("projects");
+  
+      if (projectsContainer) {
+        
+        var offset = -120;  // to scroll a few pixels above the container
+  
+        var offsetTop = projectsContainer.offsetTop + offset;
+  
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth"
+        });
+      }
+    }
+  </script>
+
+
+
+
+
+<!-- making the arrow scroll down on click END-->
 
 
 
