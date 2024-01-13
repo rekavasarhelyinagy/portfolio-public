@@ -202,9 +202,7 @@ button:hover {
   }
 }
 
-.login-form {
-  margin-top: 10px;
-}
+
 
 .menu-icon {
   cursor: pointer;
@@ -1032,26 +1030,39 @@ button:hover {
 
 }
 
+.project-header-container-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
-  .project-header {
+  .project-header-container {
+    display: none;
+  }
+  .project-header-container-mobile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
+    margin-top: 130px;
   }
-  .more-projects-header {
+  .more-projects-header-mobile{
+    margin-bottom: 50px;
+  }
+  .project-title-header-mobile{
+    margin-bottom: 30px;
+  }
+  .programming-language-header-mobile{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 30vw;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
   }
-  .project-title-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  
+  .programming-language-header-mobile img {
+    width: 80px;
+    height: 80px;
   }
+
 }
 
 .more-projects-header {
@@ -1087,7 +1098,6 @@ button:hover {
   width: 30vw;
   justify-content: flex-end;
   gap: 20px;
-  
 }
 
 .programming-language-header img {
@@ -1190,6 +1200,26 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .lunar-lander-intro p{
+    width: 90vw;
+  }
+  .lunar-lander-text2 p {
+    width: 90vw;
+  }
+  .lunar-lander-part1-calculation-text{
+    width: 90vw;
+  }
+  .lunar-lander-img1 {
+    width: 80vw;
+    height: auto;
+  }
+  .lunar-lander-img4{
+    width: 90vw;
+    height: auto;
+  }
 }
 
 
@@ -1327,6 +1357,32 @@ button:hover {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .bstjkp-intro p {
+    width: 90vw;
+  }
+  .bstjkp-img-planning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 90vw;
+  }
+  .bstjkp-planning-img{
+    width: 90vw;
+  }
+  .bstjkp-img-play{
+    width: 90vw;
+  }
+  .bstjkp-img-play img{
+    width: 90vw;
+  }
+  .bstjkp-trailer-text p{
+    width: 90vw;
+  }
+}
+
 /* --- PROJECT DESCRIPTIONS - MAGAZINE --- */
 
 .magazine-part1 {
@@ -1402,6 +1458,12 @@ button:hover {
 .magazine-img-page:hover img {
   transform: scale(1.5);
   transition: transform 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1200px) {
+  .magazine-intro p{
+    width: 90vw;
+  }
 }
 
 
@@ -1565,7 +1627,7 @@ button:hover {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 85vh;
+  
   
 }
 
@@ -1605,9 +1667,8 @@ button:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 250px;
 }
 
 .branding-essence-img-wide-logo{
@@ -1636,8 +1697,7 @@ button:hover {
   align-items: center;
   gap: 80px;
   justify-content: center;
-  height: 50vh;
-  
+  margin-top: 200px;
 }
 
 .branding-essence-part3-col1 p{
@@ -1688,8 +1748,7 @@ button:hover {
   justify-content: center;
   align-items: start;
   gap: 50px;
-  margin-top: 30vh;
-  margin-bottom: 40vh;
+  margin-top: 150px;
 }
 
 .branding-essence-part5 p{
@@ -1712,6 +1771,55 @@ button:hover {
   object-fit: cover;
   border-radius: var(--global-img-border-radius);
   margin-top: 10vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  .branding-essence-part1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .branding-essence-text1 p{
+    margin: auto;
+    margin-top: 50px;
+  }
+  .branding-essence-text1 h1{
+    margin: auto;
+  }
+  .branding-essence-img-poster{
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .branding-essence-img-poster img{
+    width: 90vw;
+  }
+  .branding-essence-part2{
+    margin: auto;
+    margin-top: 130px;
+  }
+  .branding-essence-part3{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+  }
+  .branding-essence-part3-col1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .branding-essence-part5{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+  }
+  .branding-essence-img-bts img{
+    margin: auto;
+    height: 45vw;
+    width: 70vw;
+  }
 }
 
 
@@ -1740,6 +1848,16 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .stylization-content{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .stylization-content p{
+    margin-top: auto;
+  }
 }
 
 /* --- PROJECT DESCRIPTIONS - BRANDING-DOVEKO --- */
@@ -1799,6 +1917,16 @@ button:hover {
 
 .branding-doveko-content h2{
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .branding-doveko-intro p{
+    width: 90vw;
+  }
+  .branding-doveko-part2 img{
+    width: 90vw;
+    height: auto;
+  }
 }
 
 
@@ -2010,11 +2138,6 @@ button:hover {
 
 
 
-
-
-
-
-
 .branding-bookstore-intro-text{
   display: flex;
   flex-direction: column;
@@ -2023,6 +2146,49 @@ button:hover {
 
 .branding-bookstore-intro-text p{
   width: 1000px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .branding-bookstore-intro-text p{
+    width: 90vw;
+  }
+  .branding-bookstore-part1{
+    display: flex;
+    flex-direction: column;
+  }
+  .branding-bookstore-part1-col1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .branding-bookstore-part1-col1 p{
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .branding-bookstore-part3{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .branding-bookstore-part5-img{
+    flex-direction: column;
+  }
+  .branding-bookstore-part5-img img{
+    width: 80vw;
+  }
+  .branding-bookstore-part5-img-col1 img{
+    height: auto;
+  }
+  .branding-bookstore-part6-img {
+    flex-direction: column;
+  }
+  .branding-bookstore-part5-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
 }
 
 
@@ -2054,6 +2220,13 @@ button:hover {
   border-radius: var(--global-img-border-radius);
   margin: 10px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .todo-list-text p{
+    width: 90vw;
+  }
+}
+
 
 /* --- PROJECT DESCRIPTIONS - SKEUMORPHISM --- */
 
@@ -2242,4 +2415,16 @@ border-radius: var(--global-img-border-radius);
 
 .swerv-img-lofi-container:hover .swerv-img-lofi {
   opacity: 0.2;
+}
+
+@media only screen and (max-width: 1200px) {
+  .swerv-competitors-text1 p {
+    width: 90vw;
+  }
+  .swerv-competitors-text2 p {
+    width: 90vw;
+  }
+  .swerv-colour-text p {
+    width: 86vw;
+  }
 }
